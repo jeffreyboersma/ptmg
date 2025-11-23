@@ -16,6 +16,12 @@
     --spacing-md: 2rem;
     --spacing-lg: 4rem;
     --spacing-xl: 8rem;
+
+    --accounting-color: #54a4e6;
+    --client-color: #4caf50;
+    --taxation-color: #ff9800;
+    --advisory-color: #9c27b0;
+    --it-color: #00bcd4;
 }
 
 [data-theme="dark"] {
@@ -26,4 +32,10 @@
     --accent-color: #54a4e6;
     --border-color: #333333;
     --card-bg: #1a1a1a;
+
+    --accounting-color: #54a4e6;
+    --client-color: #4caf50;
+    --taxation-color: #ff9800;
+    --advisory-color: #9c27b0;
+    --it-color: #00bcd4;
 }

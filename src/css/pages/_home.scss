@@ -2,6 +2,7 @@
 .hero {
     padding: var(--spacing-lg) 0;
     text-align: center;
+    align-items: center;
 }
 
 .hero h1 {
@@ -14,7 +15,7 @@
     font-size: 1.2rem;
     color: var(--text-secondary);
     max-width: 600px;
-    margin: 0 auto var(--spacing-lg);
+    margin: 0 auto;
 }
 
 .hero-actions {
@@ -73,12 +74,6 @@
     gap: var(--spacing-sm);
     align-items: center;
 }
-
-// .feature-card:hover {
-//     transform: translateY(-5px);
-//     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-//     border-color: var(--accent-color);
-// }
 
 .feature-card .feature-icon {
     width: 40px;

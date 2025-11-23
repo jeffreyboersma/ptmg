@@ -12,37 +12,31 @@
         position: absolute;
         inset: 0;
         background-color: var(--card-tint, transparent);
-        opacity: 0.08;
+        opacity: 0.15;
         z-index: -1;
         transition: opacity 0.3s ease;
     }
 
     // Modifier classes for tints
     &--accounting {
-        --card-tint: #54a4e6;
+        --card-tint: var(--accounting-color);
     }
 
-    // Blue
     &--client {
-        --card-tint: #4caf50;
+        --card-tint: var(--client-color);
     }
 
-    // Green
     &--taxation {
-        --card-tint: #ff9800;
+        --card-tint: var(--taxation-color);
     }
 
-    // Orange
     &--advisory {
-        --card-tint: #9c27b0;
+        --card-tint: var(--advisory-color);
     }
 
-    // Purple
     &--it {
-        --card-tint: #00bcd4;
+        --card-tint: var(--it-color);
     }
-
-    // Cyan
 }
 
 .service-card:hover {
@@ -50,7 +44,7 @@
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 
     &::before {
-        opacity: 0.12;
+        opacity: 0.22;
     }
 }
 
