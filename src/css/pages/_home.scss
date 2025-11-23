@@ -1,6 +1,6 @@
 /* Hero */
 .hero {
-    padding: var(--spacing-xl) 0;
+    padding: var(--spacing-lg) 0;
     text-align: center;
 }
 
@@ -25,7 +25,7 @@
 
 /* Services */
 .services-section {
-    padding: var(--spacing-xl) 0;
+    padding: var(--spacing-lg) 0;
     background-color: var(--bg-secondary);
 }
 
@@ -46,41 +46,72 @@
 
 /* Why Us */
 .why-us-section {
-    padding: var(--spacing-xl) 0;
+    padding: var(--spacing-lg) 0;
+    background-color: var(--bg-primary);
 }
 
-.why-us-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--spacing-lg);
+.section-header.text-center {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto var(--spacing-lg);
 }
 
-.feature-list {
+.feature-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: var(--spacing-md);
 }
 
-.feature-list li {
-    border-top: 1px solid var(--border-color);
-    padding-top: var(--spacing-sm);
+.feature-card {
+    background-color: var(--bg-secondary);
+    padding: var(--spacing-sm);
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: var(--spacing-sm);
+    align-items: center;
 }
 
-.feature-list strong {
-    display: block;
+// .feature-card:hover {
+//     transform: translateY(-5px);
+//     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+//     border-color: var(--accent-color);
+// }
+
+.feature-card .feature-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: var(--spacing-xs);
+}
+
+.feature-card .feature-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.feature-card h3 {
     font-family: var(--font-sans);
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-xs);
 }
 
-.feature-list p {
+.feature-card p {
     color: var(--text-secondary);
-    font-size: 0.9rem;
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
 /* Dates */
 .dates-section {
-    padding: var(--spacing-xl) 0;
+    padding: var(--spacing-lg) 0;
     border-top: 1px solid var(--border-color);
     border-bottom: 1px solid var(--border-color);
 }
@@ -112,13 +143,5 @@
 @media (max-width: 768px) {
     .hero h1 {
         font-size: 2.5rem;
-    }
-
-    .why-us-content {
-        grid-template-columns: 1fr;
-    }
-
-    .feature-list {
-        grid-template-columns: 1fr;
     }
 }
