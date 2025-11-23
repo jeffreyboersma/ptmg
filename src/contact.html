@@ -4,9 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IT Advisory | PTMG Chartered Professional Accountants</title>
-    <meta name="description"
-        content="Leveraging Technology for Business Advantage. PTMG helps you integrate and optimize technology for efficiency and security.">
+    <title>Contact Us | PTMG Chartered Professional Accountants</title>
+    <meta name="description" content="Contact PTMG in Exeter, Ontario. Phone, email, and office hours.">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,7 +14,10 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
         rel="stylesheet">
 
-
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.scss" />
+    <script src="/js/theme-init.js"></script>
+    <script type="module" src="/js/main.js"></script>
 </head>
 
 <body>
@@ -73,30 +75,54 @@
     <main>
         <section class="hero page-hero">
             <div class="container hero-content">
-                <h1>IT Advisory</h1>
-                <p class="hero-subtitle">Leveraging Technology for Business Advantage</p>
+                <h1>Contact Us</h1>
+                <p class="hero-subtitle">Let's Start the Conversation</p>
             </div>
         </section>
 
-        <section class="content-section">
-            <div class="container">
-                <div class="content-block">
-                    <h2>Drive efficiency, security, and growth.</h2>
-                    <p>Our IT advisory services help businesses integrate and optimize technology to drive efficiency,
-                        security, and growth. PTMG guides you through software selection, implementation, and
-                        cybersecurity best practices.</p>
+        <section class="contact-section">
+            <div class="container contact-container">
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    <p>Whether you’re looking for a new accounting partner or have questions about our services, the
+                        PTMG LLP team is here to help.</p>
 
-                    <h3>Services Include:</h3>
-                    <ul class="service-list">
-                        <li>IT strategy and planning</li>
-                        <li>System selection and implementation</li>
-                        <li>Cybersecurity assessments</li>
-                        <li>Data management and analytics</li>
-                    </ul>
+                    <div class="contact-details">
+                        <a href="tel:519-235-0101" class="contact-link">
+                            <span class="label">Office</span>
+                            <span class="value">519-235-0101</span>
+                        </a>
+                        <a href="tel:1-888-786-7864" class="contact-link">
+                            <span class="label">Toll Free</span>
+                            <span class="value">1-888-786-7864</span>
+                        </a>
+                        <a href="mailto:info@ptmg.ca" class="contact-link">
+                            <span class="label">Email</span>
+                            <span class="value">info@ptmg.ca</span>
+                        </a>
+                        <div class="address">
+                            <span class="label">Visit Us</span>
+                            <p>71 Main Street N,<br>Exeter, ON N0M 1S3</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="cta-block">
-                    <h3>Upgrade your technology strategy.</h3>
-                    <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+
+                <div class="contact-form-container">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
                 </div>
             </div>
         </section>
@@ -108,7 +134,7 @@
         </div>
     </footer>
 
-    <script type="module" src="/js/main.js"></script>
+
 </body>
 
 </html>
