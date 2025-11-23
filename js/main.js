@@ -32,21 +32,26 @@ document.addEventListener('DOMContentLoaded', () => {
         // Animate hamburger to X
         const spans = menuToggle.querySelectorAll('span');
         if (mainNav.classList.contains('active')) {
-            spans[0].style.transform = 'rotate(45deg) translate(5px, 6px)';
-            spans[1].style.transform = 'rotate(-45deg) translate(5px, -6px)';
+            spans[0].style.transform = 'rotate(45deg) translate(0px, 6px)';
+            spans[1].style.display = 'none';
+            spans[2].style.transform = 'rotate(-45deg) translate(0px, -6px)';
         } else {
             spans[0].style.transform = 'none';
-            spans[1].style.transform = 'none';
+            spans[1].style.display = 'block';
+            spans[2].style.transform = 'none';
         }
     });
 
     // Close mobile menu when a link is clicked
     navLinks.forEach(link => {
         link.addEventListener('click', () => {
-            mainNav.classList.remove('active');
-            const spans = menuToggle.querySelectorAll('span');
-            spans[0].style.transform = 'none';
-            spans[1].style.transform = 'none';
+            if (!link.classList.contains('dropbtn')) {
+                mainNav.classList.remove('active');
+                const spans = menuToggle.querySelectorAll('span');
+                spans[0].style.transform = 'none';
+                spans[1].style.display = 'block';
+                spans[2].style.transform = 'none';
+            }
         });
     });
 
@@ -57,6 +62,37 @@ document.addEventListener('DOMContentLoaded', () => {
             header.classList.add('scrolled');
         } else {
             header.classList.remove('scrolled');
+        }
+    });
+
+
+    // Open Dropdown on hover, keep open if clicked
+    const dropdowns = document.querySelectorAll('.dropdown');
+    dropdowns.forEach(dropdown => {
+        dropdown.addEventListener('click', () => {
+            if (dropdown.classList.contains('clicked')) {
+                dropdown.classList.remove('active', 'clicked');
+            }
+            else {
+                dropdown.classList.add('active', 'clicked');
+            }
+        });
+        dropdown.addEventListener('mouseenter', () => {
+            dropdown.classList.add('active');
+        });
+        dropdown.addEventListener('mouseleave', () => {
+            if (!dropdown.classList.contains('clicked')) {
+                dropdown.classList.remove('active');
+            }
+        });
+    });
+
+    // Close dropdown when clicked outside or on dropbtn
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.dropdown')) {
+            dropdowns.forEach(dropdown => {
+                dropdown.classList.remove('active', 'clicked');
+            });
         }
     });
 });

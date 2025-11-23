@@ -8,8 +8,7 @@
     --border-color: #e0e0e0;
     --card-bg: #ffffff;
 
-    --font-serif: 'Playfair Display', serif;
-    --font-sans: 'Inter', sans-serif;
+    --font-sans: 'Calibri', sans-serif;
 
     --container-width: 1200px;
     --spacing-sm: 1rem;
@@ -53,7 +52,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: var(--font-serif);
+    font-family: var(--font-sans);
     font-weight: 600;
     line-height: 1.2;
     margin-bottom: var(--spacing-sm);
@@ -97,7 +96,7 @@ ul {
 }
 
 .logo {
-    font-family: var(--font-serif);
+    font-family: var(--font-sans);
     font-size: 1.5rem;
     font-weight: 700;
     letter-spacing: 0.05em;
@@ -122,6 +121,66 @@ ul {
     display: flex;
     align-items: center;
     gap: var(--spacing-sm);
+}
+
+/* Dropdown Menu */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--bg-secondary);
+    min-width: 220px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    top: 100%;
+    left: 0;
+    flex-direction: column;
+    gap: 0;
+
+}
+
+.dropdown ul {
+    display: none;
+}
+
+.dropdown.active ul {
+    display: block;
+}
+
+.dropdown-content li {
+    width: 100%;
+    list-style: none;
+    display: none;
+}
+
+.dropdown-content a {
+    color: var(--text-secondary);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 0.9rem;
+    transition: background-color 0.2s;
+}
+
+.dropdown-content a:hover {
+    border-radius: 8px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.dropdown.active .dropdown-content li {
+  display: block;
+}
+
+.dropbtn {
+    cursor: pointer;
 }
 
 /* Theme Toggle */
@@ -290,7 +349,7 @@ ul {
 
 .feature-list strong {
     display: block;
-    font-family: var(--font-serif);
+    font-family: var(--font-sans);
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
 }
@@ -320,7 +379,7 @@ ul {
 }
 
 .date-item .date {
-    font-family: var(--font-serif);
+    font-family: var(--font-sans);
     font-size: 2rem;
     color: var(--accent-color);
     margin-bottom: 0.5rem;
@@ -363,7 +422,7 @@ ul {
 }
 
 .contact-link .value {
-    font-family: var(--font-serif);
+    font-family: var(--font-sans);
     font-size: 1.5rem;
 }
 
@@ -429,7 +488,15 @@ ul {
 
     .main-nav a {
         font-size: 1.5rem;
-        font-family: var(--font-serif);
+        font-family: var(--font-sans);
+    }
+
+    .main-nav ul .dropdown-content {
+        position: static;
+    }
+
+    .main-nav ul .dropdown-content li {
+        width: 100%;
     }
 
     .why-us-content,
@@ -514,6 +581,66 @@ ul {
 
 .form-group {
     margin-bottom: var(--spacing-md);
+}
+
+.form-group label {
+    color: var(--accent-color);
+    margin-bottom: 0.5rem;
+}
+
+.date-item .event {
+    font-weight: 500;
+}
+
+/* Contact */
+.contact-section {
+    padding: var(--spacing-xl) 0;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xl);
+}
+
+.contact-details {
+    margin-top: var(--spacing-lg);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.contact-link {
+    display: block;
+}
+
+.contact-link .label,
+.address .label {
+    display: block;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-secondary);
+    margin-bottom: 0.25rem;
+}
+
+.contact-link .value {
+    font-family: var(--font-sans);
+    font-size: 1.5rem;
+}
+
+.address p {
+    font-size: 1.2rem;
+}
+
+.hours-block {
+    margin-bottom: var(--spacing-md);
+}
+
+.hours-block h4 {
+    font-size: 1rem;
+    color: var(--accent-color);
+    margin-bottom: 0.5rem;
 }
 
 .form-group label {
