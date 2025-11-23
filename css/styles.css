@@ -176,7 +176,7 @@ ul {
 }
 
 .dropdown.active .dropdown-content li {
-  display: block;
+    display: block;
 }
 
 .dropbtn {
