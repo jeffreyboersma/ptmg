@@ -1,12 +1,14 @@
+import '../css/styles.scss';
+
 document.addEventListener('DOMContentLoaded', () => {
     // Theme Toggle Logic
     const themeToggle = document.getElementById('theme-toggle');
     const htmlElement = document.documentElement;
-    
+
     // Check for saved user preference, if any, on load of the website
     const savedTheme = localStorage.getItem('theme');
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    
+
     if (savedTheme) {
         htmlElement.setAttribute('data-theme', savedTheme);
     } else if (prefersDark) {
@@ -16,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     themeToggle.addEventListener('click', () => {
         const currentTheme = htmlElement.getAttribute('data-theme');
         const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-        
+
         htmlElement.setAttribute('data-theme', newTheme);
         localStorage.setItem('theme', newTheme);
     });
@@ -28,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     menuToggle.addEventListener('click', () => {
         mainNav.classList.toggle('active');
-        
+
         // Animate hamburger to X
         const spans = menuToggle.querySelectorAll('span');
         if (mainNav.classList.contains('active')) {
