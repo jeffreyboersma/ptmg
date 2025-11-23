@@ -1,0 +1,62 @@
+/* Sub-Page Styles */
+.page-hero {
+    padding: var(--spacing-lg) 0;
+    background-color: var(--bg-secondary);
+}
+
+.page-hero h1 {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.content-section {
+    padding: var(--spacing-xl) 0;
+}
+
+.content-block {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.content-block h2 {
+    font-size: 2rem;
+    margin-bottom: var(--spacing-md);
+    color: var(--text-color);
+}
+
+.content-block p {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-md);
+}
+
+.service-list {
+    list-style: disc;
+    padding-left: 1.5rem;
+    margin-bottom: var(--spacing-lg);
+}
+
+.service-list li {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.cta-block {
+    margin-top: var(--spacing-xl);
+    text-align: center;
+    padding: var(--spacing-lg);
+    background-color: var(--bg-secondary);
+    border-radius: 8px;
+}
+
+.cta-block h3 {
+    margin-bottom: var(--spacing-md);
+}
+
+/* Support Page */
+.support-links {
+    display: flex;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+}

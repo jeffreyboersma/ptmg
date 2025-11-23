@@ -1,0 +1,57 @@
+/* Contact */
+.contact-section {
+    padding: var(--spacing-xl) 0;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xl);
+}
+
+.contact-details {
+    margin-top: var(--spacing-lg);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.contact-link {
+    display: block;
+}
+
+.contact-link .label,
+.address .label {
+    display: block;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-secondary);
+    margin-bottom: 0.25rem;
+}
+
+.contact-link .value {
+    font-family: var(--font-sans);
+    font-size: 1.5rem;
+}
+
+.address p {
+    font-size: 1.2rem;
+}
+
+.hours-block {
+    margin-bottom: var(--spacing-md);
+}
+
+.hours-block h4 {
+    font-size: 1rem;
+    color: var(--accent-color);
+    margin-bottom: 0.5rem;
+}
+
+/* Mobile Responsive for Contact Page */
+@media (max-width: 768px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+}

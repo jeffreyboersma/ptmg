@@ -1,0 +1,28 @@
+:root {
+    /* Light Theme (Default) */
+    --bg-color: #ffffff;
+    --bg-secondary: #f9f9f9;
+    --text-color: #1a1a1a;
+    --text-secondary: #555555;
+    --accent-color: #c5a059;
+    --border-color: #e0e0e0;
+    --card-bg: #ffffff;
+
+    --font-sans: 'Calibri Light', sans-serif;
+
+    --container-width: 1200px;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 4rem;
+    --spacing-xl: 8rem;
+}
+
+[data-theme="dark"] {
+    --bg-color: #111111;
+    --bg-secondary: #1a1a1a;
+    --text-color: #f0f0f0;
+    --text-secondary: #a0a0a0;
+    --accent-color: #d4af37;
+    --border-color: #333333;
+    --card-bg: #1a1a1a;
+}
