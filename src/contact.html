@@ -29,11 +29,13 @@
                     <li class="dropdown">
                         <a class="dropbtn">Services</a>
                         <ul class="dropdown-content">
-                            <li><a href="accounting-auditing.html">Accounting & Auditing</a></li>
-                            <li><a href="client-accounting.html">Client Accounting</a></li>
-                            <li><a href="taxation.html">Taxation</a></li>
-                            <li><a href="business-advisory.html">Business Advisory</a></li>
-                            <li><a href="it-advisory.html">IT Advisory</a></li>
+                            <li><a class="accounting-auditing" href="accounting-auditing.html">Accounting &
+                                    Auditing</a>
+                            </li>
+                            <li><a class="client-accounting" href="client-accounting.html">Client Accounting</a></li>
+                            <li><a class="taxation" href="taxation.html">Taxation</a></li>
+                            <li><a class="business-advisory" href="business-advisory.html">Business Advisory</a></li>
+                            <li><a class="it-advisory" href="it-advisory.html">IT Advisory</a></li>
                         </ul>
                     </li>
                     <li><a href="team.html">Team</a></li>
@@ -75,19 +77,25 @@
     <main>
         <section class="hero page-hero">
             <div class="container hero-content">
+                <div class="hero-image">
+                    <img src="images/building.webp" alt="PTMG Building">
+                </div>
                 <h1>Contact Us</h1>
                 <p class="hero-subtitle">Let's Start the Conversation</p>
             </div>
         </section>
 
-        <section class="contact-section">
+        <section id="contact" class="contact-section">
             <div class="container contact-container">
                 <div class="contact-info">
-                    <h2>Get in Touch</h2>
-                    <p>Whether you’re looking for a new accounting partner or have questions about our services, the
-                        PTMG LLP team is here to help.</p>
+                    <h2>Let's Start a Conversation</h2>
+                    <p>Ready to take the next step? Contact PTMG Chartered Professional Accountants today.</p>
 
                     <div class="contact-details">
+                        <div class="address">
+                            <span class="label">Visit Us</span>
+                            <p>71 Main Street N,<br>Exeter, ON N0M 1S3</p>
+                        </div>
                         <a href="tel:519-235-0101" class="contact-link">
                             <span class="label">Office</span>
                             <span class="value">519-235-0101</span>
@@ -96,33 +104,28 @@
                             <span class="label">Toll Free</span>
                             <span class="value">1-888-786-7864</span>
                         </a>
+                        <a class="contact-link">
+                            <span class="label">Fax</span>
+                            <span class="value">519-235-3211</span>
+                        </a>
                         <a href="mailto:info@ptmg.ca" class="contact-link">
                             <span class="label">Email</span>
                             <span class="value">info@ptmg.ca</span>
                         </a>
-                        <div class="address">
-                            <span class="label">Visit Us</span>
-                            <p>71 Main Street N,<br>Exeter, ON N0M 1S3</p>
-                        </div>
                     </div>
                 </div>
-
-                <div class="contact-form-container">
-                    <form class="contact-form">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
+                <div class="office-hours">
+                    <h3>Office Hours</h3>
+                    <div class="hours-block">
+                        <h4>Jan – Apr</h4>
+                        <p>Mon – Fri: 8:00 am – 5:00 pm</p>
+                    </div>
+                    <div class="hours-block">
+                        <h4>May – Dec</h4>
+                        <p>Mon – Thu: 8:00 am – 5:00 pm</p>
+                        <p>Fri: 8:00 am – 4:30 pm</p>
+                    </div>
+                    <p class="note">Evenings and weekends by appointment</p>
                 </div>
             </div>
         </section>
