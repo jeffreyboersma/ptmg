@@ -60,8 +60,9 @@
 
 .feature-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 550px));
     gap: var(--spacing-md);
+    justify-content: center;
 }
 
 .feature-card {
@@ -129,6 +130,7 @@ svg.feature-icon {
     align-items: center;
     padding-bottom: var(--spacing-md);
     background-color: var(--bg-primary);
+    gap: var(--spacing-xs);
 }
 
 .date-item .date {
