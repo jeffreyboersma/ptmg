@@ -17,7 +17,14 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/styles.scss" />
-    <script src="/js/theme-init.js"></script>
+    <script>
+        (function () {
+            const savedTheme = localStorage.getItem('theme');
+            const systemPreference = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            const currentTheme = savedTheme || systemPreference;
+            document.documentElement.setAttribute('data-theme', currentTheme);
+        })();
+    </script>
     <script type="module" src="/js/main.js"></script>
 </head>
 
