@@ -1,3 +1,4 @@
+import 'virtual:svg-icons-register';
 import '../css/styles.scss';
 
 document.addEventListener('DOMContentLoaded', () => {

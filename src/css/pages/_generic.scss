@@ -85,6 +85,8 @@
     font-size: 2rem;
     margin-bottom: var(--spacing-md);
     color: var(--text-color);
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: var(--spacing-sm);
 }
 
 .content-block p {
@@ -102,11 +104,11 @@
 .service-list li {
     font-size: 1.1rem;
     margin-bottom: 0.5rem;
-    color: var(--text-color);
+    color: var(--text-secondary);
 }
 
 .cta-block {
-    margin-top: var(--spacing-xl);
+    margin-top: var(--spacing-lg);
     text-align: center;
     padding: var(--spacing-lg);
     background-color: var(--bg-secondary);

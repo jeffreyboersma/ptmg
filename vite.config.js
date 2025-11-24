@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
+import { createSvgIconsPlugin } from 'vite-plugin-svg-icons';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -8,6 +9,14 @@ const __dirname = dirname(__filename);
 export default defineConfig({
   root: 'src',
   publicDir: '../public',
+  plugins: [
+    createSvgIconsPlugin({
+      // Specify the icon folder to be cached
+      iconDirs: [resolve(__dirname, 'src/assets/icons')],
+      // Specify symbolId format
+      symbolId: 'icon-[dir]-[name]',
+    }),
+  ],
   build: {
     outDir: '../dist',
     emptyOutDir: true,
