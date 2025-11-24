@@ -1,0 +1,41 @@
+:root {
+    /* Light Theme (Default) */
+    --bg-color: #ffffff;
+    --bg-secondary: #f3f3f3;
+    --text-color: #1a1a1a;
+    --text-secondary: #555555;
+    --accent-color: #eeb574;
+    --border-color: #e0e0e0;
+    --card-bg: #ffffff;
+
+    --font-sans: 'Calibri Light', sans-serif;
+
+    --container-width: 1200px;
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 4rem;
+    --spacing-xl: 8rem;
+
+    --accounting-auditing-color: #54a4e6;
+    --client-accounting-color: #4caf50;
+    --taxation-color: #ff9800;
+    --business-advisory-color: #9c27b0;
+    --it-advisory-color: #00bcd4;
+}
+
+[data-theme="dark"] {
+    --bg-color: #111111;
+    --bg-secondary: #1d1d1d;
+    --text-color: #f0f0f0;
+    --text-secondary: #a0a0a0;
+    --accent-color: #9e5b0d;
+    --border-color: #333333;
+    --card-bg: #1a1a1a;
+
+    --accounting-auditing-color: #54a4e6;
+    --client-accounting-color: #4caf50;
+    --taxation-color: #ff9800;
+    --business-advisory-color: #9c27b0;
+    --it-advisory-color: #00bcd4;
+}
