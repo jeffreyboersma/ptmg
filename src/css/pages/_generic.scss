@@ -16,24 +16,24 @@
     }
 
     // Modifier classes for tints
-    &--accounting {
-        --hero-tint: var(--accounting-color);
+    &--accounting-auditing {
+        --hero-tint: var(--accounting-auditing-color);
     }
 
-    &--client {
-        --hero-tint: var(--client-color);
+    &--client-accounting {
+        --hero-tint: var(--client-accounting-color);
     }
 
     &--taxation {
         --hero-tint: var(--taxation-color);
     }
 
-    &--advisory {
-        --hero-tint: var(--advisory-color);
+    &--business-advisory {
+        --hero-tint: var(--business-advisory-color);
     }
 
-    &--it {
-        --hero-tint: var(--it-color);
+    &--it-advisory {
+        --hero-tint: var(--it-advisory-color);
     }
 }
 
@@ -45,6 +45,7 @@
 .hero-content {
     text-align: center;
 }
+
 .hero-subtitle {
     font-size: 1.15rem;
     font-weight: 600;

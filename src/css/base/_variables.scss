@@ -17,11 +17,11 @@
     --spacing-lg: 4rem;
     --spacing-xl: 8rem;
 
-    --accounting-color: #54a4e6;
-    --client-color: #4caf50;
+    --accounting-auditing-color: #54a4e6;
+    --client-accounting-color: #4caf50;
     --taxation-color: #ff9800;
-    --advisory-color: #9c27b0;
-    --it-color: #00bcd4;
+    --business-advisory-color: #9c27b0;
+    --it-advisory-color: #00bcd4;
 }
 
 [data-theme="dark"] {
@@ -33,9 +33,9 @@
     --border-color: #333333;
     --card-bg: #1a1a1a;
 
-    --accounting-color: #54a4e6;
-    --client-color: #4caf50;
+    --accounting-auditing-color: #54a4e6;
+    --client-accounting-color: #4caf50;
     --taxation-color: #ff9800;
-    --advisory-color: #9c27b0;
-    --it-color: #00bcd4;
+    --business-advisory-color: #9c27b0;
+    --it-advisory-color: #00bcd4;
 }

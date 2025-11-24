@@ -20,24 +20,24 @@
     }
 
     // Modifier classes for tints
-    &--accounting {
-        --card-tint: var(--accounting-color);
+    &--accounting-auditing {
+        --card-tint: var(--accounting-auditing-color);
     }
 
-    &--client {
-        --card-tint: var(--client-color);
+    &--client-accounting {
+        --card-tint: var(--client-accounting-color);
     }
 
     &--taxation {
         --card-tint: var(--taxation-color);
     }
 
-    &--advisory {
-        --card-tint: var(--advisory-color);
+    &--business-advisory {
+        --card-tint: var(--business-advisory-color);
     }
 
-    &--it {
-        --card-tint: var(--it-color);
+    &--it-advisory {
+        --card-tint: var(--it-advisory-color);
     }
 }
 

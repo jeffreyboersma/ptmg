@@ -89,6 +89,7 @@
 
     .main-nav ul {
         flex-direction: column;
+        gap: var(--spacing-md);
     }
 
     .main-nav a {
@@ -102,6 +103,10 @@
 
     .main-nav ul .dropdown-content li {
         width: 100%;
+    }
+
+    .main-nav ul .dropdown-content li a {
+        font-size: 1.25rem;
     }
 }
 
@@ -145,15 +150,36 @@
 .dropdown-content a {
     color: var(--text-secondary);
     padding: 12px 16px;
-    text-decoration: none;
     display: block;
     transition: background-color 0.2s;
 }
 
 .dropdown-content a:hover {
     border-radius: 8px;
-    background-color: var(--bg-color);
+    background-color: var(--service-tint, transparent);
+    opacity: 0.15;
     color: var(--text-color);
+
+    // Modifier classes for tints
+    &--accounting-auditing {
+        --service-tint: var(--accounting-auditing-color);
+    }
+
+    &--client-accounting {
+        --service-tint: var(--client-accounting-color);
+    }
+
+    &--taxation {
+        --service-tint: var(--taxation-color);
+    }
+
+    &--business-advisory {
+        --service-tint: var(--business-advisory-color);
+    }
+
+    &--it-advisory {
+        --service-tint: var(--it-advisory-color);
+    }
 }
 
 .dropdown.active .dropdown-content li {
