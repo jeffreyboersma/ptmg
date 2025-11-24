@@ -1,7 +1,11 @@
 /* Sub-Page Styles */
 .page-hero {
+    height: 20rem;
     position: relative;
     overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 
     &::before {
         content: '';
@@ -33,13 +37,24 @@
     }
 }
 
-.hero-content {
-    padding: var(--spacing-sm) 0;
-}
-
 .page-hero h1 {
     font-size: 3rem;
     margin-bottom: var(--spacing-sm);
+}
+
+.hero-content {
+    text-align: center;
+}
+.hero-subtitle {
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+.page-hero .service-icon {
+    height: 17rem;
+    width: 17rem;
+    fill: var(--hero-tint);
+    opacity: 0.10;
 }
 
 .content-section {

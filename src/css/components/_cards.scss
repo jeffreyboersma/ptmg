@@ -6,6 +6,8 @@
     position: relative;
     overflow: hidden;
     z-index: 1;
+    display: flex;
+    align-items: center;
 
     &::before {
         content: '';
@@ -56,4 +58,16 @@
 .service-card p {
     color: var(--text-secondary);
     font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.service-icon {
+    width: 10rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: var(--spacing-xs);
+    fill: var(--card-tint);
+    opacity: 0.10;
+    z-index: -1;
 }
