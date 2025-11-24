@@ -145,40 +145,52 @@
     width: 100%;
     list-style: none;
     display: none;
+
+    .accounting-auditing {
+        --service-tint: var(--accounting-auditing-color);
+    }
+
+    .client-accounting {
+        --service-tint: var(--client-accounting-color);
+    }
+
+    .taxation {
+        --service-tint: var(--taxation-color);
+    }
+
+    .business-advisory {
+        --service-tint: var(--business-advisory-color);
+    }
+
+    .it-advisory {
+        --service-tint: var(--it-advisory-color);
+    }
 }
 
 .dropdown-content a {
     color: var(--text-secondary);
+    border-radius: 8px;
     padding: 12px 16px;
     display: block;
     transition: background-color 0.2s;
+    position: relative;
 }
 
 .dropdown-content a:hover {
     border-radius: 8px;
-    background-color: var(--service-tint, transparent);
-    opacity: 0.15;
     color: var(--text-color);
 
-    // Modifier classes for tints
-    &--accounting-auditing {
-        --service-tint: var(--accounting-auditing-color);
-    }
-
-    &--client-accounting {
-        --service-tint: var(--client-accounting-color);
-    }
-
-    &--taxation {
-        --service-tint: var(--taxation-color);
-    }
-
-    &--business-advisory {
-        --service-tint: var(--business-advisory-color);
-    }
-
-    &--it-advisory {
-        --service-tint: var(--it-advisory-color);
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 8px;
+        background-color: var(--service-tint, transparent);
+        opacity: 0.15;
+        z-index: 1;
     }
 }
 
