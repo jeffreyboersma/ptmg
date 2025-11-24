@@ -111,6 +111,7 @@ svg.feature-icon {
     padding: var(--spacing-lg) 0;
     border-top: 1px solid var(--border-color);
     border-bottom: 1px solid var(--border-color);
+    background-color: var(--bg-secondary);
 }
 
 .dates-grid {
@@ -134,6 +135,29 @@ svg.feature-icon {
 
 .date-item .event {
     font-weight: 500;
+}
+
+/* Team Picture */
+.team-picture {
+    padding: var(--spacing-md) 0;
+    background-color: var(--bg-primary);
+}
+
+.team-picture-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.team-picture img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    filter: brightness(0.95);
+}
+
+[data-theme="dark"] .team-picture img {
+    filter: brightness(0.85);
 }
 
 /* Mobile Responsive for Home Page specific elements */
