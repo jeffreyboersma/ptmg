@@ -76,14 +76,16 @@
 }
 
 .feature-card .feature-icon {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: var(--accent-color);
+    width: 60px;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: var(--spacing-xs);
+}
+
+svg.feature-icon {
+    fill: var(--accent-color);
 }
 
 .feature-card .feature-content {
@@ -101,7 +103,7 @@
 .feature-card p {
     color: var(--text-secondary);
     font-size: 1rem;
-    line-height: 1.6;
+    line-height: 1.2;
 }
 
 /* Dates */
