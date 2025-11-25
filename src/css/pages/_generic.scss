@@ -80,6 +80,10 @@
     padding: var(--spacing-lg) 0;
 }
 
+.content-section--light {
+    background-color: var(--bg-secondary);
+}
+
 .content-block {
     max-width: 800px;
     margin: 0 auto;
@@ -99,12 +103,12 @@
     margin-bottom: var(--spacing-md);
 }
 
-.content-block a {
+.content-block p a {
     color: var(--accent-color);
     transition: color 0.2s ease;
 }
 
-.content-block a:hover {
+.content-block p a:hover {
     filter: brightness(1.2);
 }
 
@@ -136,5 +140,6 @@
 .support-links {
     display: flex;
     gap: var(--spacing-md);
-    margin-bottom: var(--spacing-lg);
+    margin-bottom: var(--spacing-sm);
+    justify-content: center;
 }
