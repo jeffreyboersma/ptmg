@@ -32,6 +32,7 @@ export default defineConfig({
         it_advisory: resolve(__dirname, 'src/it-advisory.html'),
         support: resolve(__dirname, 'src/support.html'),
         contact: resolve(__dirname, 'src/contact.html'),
+        team: resolve(__dirname, 'src/team.html'),
       },
     },
   },
