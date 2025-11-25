@@ -23,6 +23,7 @@
     --taxation-color: #ff9800;
     --business-advisory-color: #9c27b0;
     --it-advisory-color: #00bcd4;
+    --careers-color: var(--accent-color);
 }
 
 [data-theme="dark"] {
@@ -39,4 +40,5 @@
     --taxation-color: #ff9800;
     --business-advisory-color: #9c27b0;
     --it-advisory-color: #00bcd4;
+    --careers-color: var(--accent-color);
 }

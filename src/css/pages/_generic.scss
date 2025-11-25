@@ -49,6 +49,10 @@
     &--it-advisory {
         --hero-tint: var(--it-advisory-color);
     }
+
+    &--careers {
+        --hero-tint: var(--careers-color);
+    }
 }
 
 .page-hero h1 {
@@ -93,6 +97,15 @@
     font-size: 1.1rem;
     color: var(--text-secondary);
     margin-bottom: var(--spacing-md);
+}
+
+.content-block a {
+    color: var(--accent-color);
+    transition: color 0.2s ease;
+}
+
+.content-block a:hover {
+    filter: brightness(1.2);
 }
 
 .service-list {

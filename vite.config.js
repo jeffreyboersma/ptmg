@@ -29,6 +29,7 @@ export default defineConfig({
         client_accounting: resolve(__dirname, 'src/client-accounting.html'),
         taxation: resolve(__dirname, 'src/taxation.html'),
         business_advisory: resolve(__dirname, 'src/business-advisory.html'),
+        career: resolve(__dirname, 'src/career.html'),
         it_advisory: resolve(__dirname, 'src/it-advisory.html'),
         support: resolve(__dirname, 'src/support.html'),
         contact: resolve(__dirname, 'src/contact.html'),
