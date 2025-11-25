@@ -18,18 +18,21 @@ async function loadTeamMembers() {
             const bioWords = person.bio.split(' ');
             const truncatedBio = bioWords.slice(0, 10).join(' ') + '...';
 
-            // Create the team member card
-            const card = document.createElement('div');
-            card.className = 'team-member-card';
+            // Create the team member card as a clickable link
+            const card = document.createElement('a');
+            card.href = `team-member.html?name=${encodeURIComponent(person.name)}`;
+            card.className = 'team-member-card-link';
 
             card.innerHTML = `
-                <div class="member-image">
-                    <img src="${person.image}" alt="${person.name}">
-                </div>
-                <div class="member-info">
-                    <h3>${person.name}</h3>
-                    <span class="job-title">${person.title}, ${person.position}</span>
-                    <p class="bio">${truncatedBio}</p>
+                <div class="team-member-card">
+                    <div class="member-image">
+                        <img src="${person.image}" alt="${person.name}">
+                    </div>
+                    <div class="member-info">
+                        <h3>${person.name}</h3>
+                        <span class="job-title">${person.title}, ${person.position}</span>
+                        <p class="bio">${truncatedBio}</p>
+                    </div>
                 </div>
             `;
 

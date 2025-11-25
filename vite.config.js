@@ -33,6 +33,7 @@ export default defineConfig({
         support: resolve(__dirname, 'src/support.html'),
         contact: resolve(__dirname, 'src/contact.html'),
         team: resolve(__dirname, 'src/team.html'),
+        team_member: resolve(__dirname, 'src/team-member.html'),
       },
     },
   },

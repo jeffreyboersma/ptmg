@@ -18,6 +18,21 @@
         max-width: 600px;
         margin: 0 auto;
     }
+
+    .back-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: var(--accent-color);
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1rem;
+        transition: color 0.2s ease;
+
+        &:hover {
+            color: var(--primary-color);
+        }
+    }
 }
 
 .team-section {
@@ -30,6 +45,12 @@
         gap: var(--spacing-lg);
     }
 
+    .team-member-card-link {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+    }
+
     .team-member-card {
         background-color: var(--bg-primary);
         border-radius: 8px;
@@ -39,6 +60,7 @@
         display: flex;
         flex-direction: column;
         height: 100%;
+        cursor: pointer;
 
         &:hover {
             transform: translateY(-5px);
@@ -100,6 +122,108 @@
                 font-size: 0.95rem;
                 color: var(--text-secondary);
                 line-height: 1.6;
+            }
+        }
+    }
+}
+
+// Team Member Detail Page
+.team-member-detail {
+    padding: var(--spacing-lg) 0;
+    background-color: var(--bg-primary);
+
+    .member-detail-grid {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: var(--spacing-lg);
+        max-width: 1000px;
+        margin: 0 auto;
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .member-profile-image {
+        img {
+            width: 100%;
+            aspect-ratio: 4 / 5;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        [data-theme="dark"] & img {
+            filter: brightness(0.95);
+        }
+    }
+
+    .member-profile-info {
+        h1 {
+            font-family: var(--font-serif);
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+
+        .profile-title {
+            display: block;
+            font-size: 1.1rem;
+            color: var(--accent-color);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .contact-info-block {
+            background-color: var(--bg-secondary);
+            padding: var(--spacing-md);
+            border-radius: 8px;
+            margin-bottom: var(--spacing-lg);
+
+            h3 {
+                font-size: 1.2rem;
+                margin-bottom: var(--spacing-sm);
+                color: var(--text-primary);
+            }
+
+            .contact-item {
+                display: flex;
+                gap: 0.5rem;
+                margin-bottom: 0.75rem;
+
+                .label {
+                    font-weight: 600;
+                    color: var(--text-secondary);
+                    min-width: 60px;
+                }
+
+                a {
+                    color: var(--accent-color);
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+        .bio-section {
+            h3 {
+                font-size: 1.5rem;
+                margin-bottom: var(--spacing-md);
+                color: var(--text-primary);
+            }
+
+            .bio-content {
+                p {
+                    color: var(--text-secondary);
+                    line-height: 1.8;
+                    margin-bottom: var(--spacing-md);
+                    font-size: 1rem;
+                }
             }
         }
     }
