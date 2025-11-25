@@ -2,6 +2,11 @@ import 'virtual:svg-icons-register';
 import '../css/styles.scss';
 
 document.addEventListener('DOMContentLoaded', () => {
+    // Remove loading class when everything is loaded
+    window.addEventListener('load', () => {
+        document.body.classList.remove('loading');
+    });
+
     // Theme Toggle Logic
     const themeToggle = document.getElementById('theme-toggle');
     const htmlElement = document.documentElement;

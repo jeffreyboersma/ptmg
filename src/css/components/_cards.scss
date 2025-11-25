@@ -16,7 +16,7 @@
         position: absolute;
         inset: 0;
         background-color: var(--card-tint, transparent);
-        opacity: 0.15;
+        opacity: 0.25;
         z-index: -1;
         transition: opacity 0.3s ease;
     }
@@ -48,7 +48,7 @@
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 
     &::before {
-        opacity: 0.22;
+        opacity: 0.3;
     }
 }
 
@@ -70,6 +70,6 @@
     transform: translateX(-50%);
     margin: var(--spacing-xs);
     fill: var(--card-tint);
-    opacity: 0.10;
+    opacity: 0.15;
     z-index: -1;
 }

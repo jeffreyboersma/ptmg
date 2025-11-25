@@ -1,0 +1,35 @@
+{
+    "name": "PTMG",
+    "nameFull": "PTMG Chartered Professional Accountants",
+    "address": "71 Main Street N, Exeter, ON N0M 1S3",
+    "phone": [
+        {
+            "office": "519-235-0101",
+            "tollFree": "1-888-786-7864",
+            "fax": "519-235-3211"
+        }
+    ],
+    "email": "info@ptmg.ca",
+    "website": "https://www.ptmg.ca",
+    "logo": "images/ptmg_logo.svg",
+    "hours": [
+        {
+            "Jan-Apr": [
+                {
+                    "Mon-Fri": "8:00 AM - 5:00 PM"
+                }
+            ],
+            "May-Dec": [
+                {
+                    "Mon-Thu": "8:00 AM - 5:00 PM"
+                },
+                {
+                    "Fri": "8:00 AM - 4:00 PM"
+                }
+            ]
+        }
+    ],
+    "hoursInfo": "Evenings and weekends by appointment",
+    "linkedIn": "https://www.linkedin.com/company/ptmg-llp/",
+    "footer": "© 2025 PTMG LLP. All rights reserved."
+}
