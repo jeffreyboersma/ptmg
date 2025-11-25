@@ -67,6 +67,10 @@
                 height: 100%;
                 object-fit: cover;
             }
+
+            [data-theme="dark"] & img {
+                filter: brightness(0.95);
+            }
         }
 
         .member-info {
