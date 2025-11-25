@@ -37,7 +37,7 @@ async function loadTeamMemberDetail() {
             <div class="member-profile-image">
                 <img src="${person.image}" alt="${person.name}">
             </div>
-            <div class="member-profile-info">
+            <div class="member-profile-header">
                 <h1>${person.name}</h1>
                 <span class="profile-title">${person.title}, ${person.position}</span>
                 
@@ -52,12 +52,11 @@ async function loadTeamMemberDetail() {
                         <a href="mailto:${person.email}">${person.email}</a>
                     </div>
                 </div>
-                
-                <div class="bio-section">
-                    <h3>About ${person.name.split(' ')[0]}</h3>
-                    <div class="bio-content">
-                        ${person.bio.split('\\n').map(paragraph => `<p>${paragraph}</p>`).join('')}
-                    </div>
+            </div>
+            <div class="bio-section">
+                <h3>About ${person.name.split(' ')[0]}</h3>
+                <div class="bio-content">
+                    ${person.bio.split('\n').map(paragraph => `<p>${paragraph}</p>`).join('')}
                 </div>
             </div>
         `;

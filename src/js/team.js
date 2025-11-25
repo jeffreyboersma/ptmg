@@ -32,6 +32,7 @@ async function loadTeamMembers() {
                         <h3>${person.name}</h3>
                         <span class="job-title">${person.title}, ${person.position}</span>
                         <p class="bio">${truncatedBio}</p>
+                        <span class="learn-more-btn">Learn More →</span>
                     </div>
                 </div>
             `;
