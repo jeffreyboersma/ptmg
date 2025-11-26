@@ -23,27 +23,35 @@
     height: 3rem;
 }
 
-.logo img{
+.logo img {
     height: 100%;
 }
 
-[data-theme="dark"] .logo img{
+[data-theme="dark"] .logo img {
     filter: brightness(0) invert(1) brightness(0.9);
+}
+
+.main-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--spacing-lg);
 }
 
 .main-nav ul {
     display: flex;
-    gap: var(--spacing-md);
+    gap: var(--spacing-lg);
 }
 
 .main-nav a.btn-nav {
     background-color: var(--accent-color);
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     font-weight: 600;
     color: var(--text-color);
     padding: var(--spacing-xs) var(--spacing-sm);
-    border-radius: 8px;
+    border-radius: 4px;
     transition: background-color 0.2s;
+    text-align: center;
 }
 
 .main-nav a.btn-nav:hover {
@@ -62,6 +70,13 @@
 
 .main-nav a.active {
     color: var(--accent-color);
+}
+
+.header-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+    margin-left: auto;
 }
 
 .header-actions {
