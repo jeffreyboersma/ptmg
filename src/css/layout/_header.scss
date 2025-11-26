@@ -50,14 +50,16 @@
     font-weight: 600;
     color: var(--bg-color);
     padding: var(--spacing-xs) 0.5rem;
-    border-radius: 4px;
-    transition: background-color 0.2s;
+    border-radius: 8px;
     text-align: center;
     white-space: nowrap;
+    transition: all 0.2s ease;
 }
 
 .site-header a.btn-nav:hover {
-    filter: brightness(0.9);
+    transform: translateY(-1px);
+    filter: brightness(1.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
 .main-nav a {

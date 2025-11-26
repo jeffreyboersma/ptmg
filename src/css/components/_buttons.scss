@@ -14,7 +14,7 @@
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    filter: saturate(1.2) brightness(0.95);
+    filter: brightness(1.1);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
@@ -31,7 +31,7 @@
 .btn-secondary:hover {
     color: var(--text-color);
     transform: translateY(-2px);
-    filter: brightness(0.95);
+    filter: brightness(0.97);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
