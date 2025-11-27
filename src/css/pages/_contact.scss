@@ -65,8 +65,11 @@
     padding-bottom: var(--spacing-xs);
 }
 
+.contact-info p {
+    margin-bottom: var(--spacing-md);
+}
+
 .contact-details {
-    margin-top: var(--spacing-md);
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 0 var(--spacing-lg) 0 0;
@@ -98,8 +101,35 @@
     font-size: 1rem;
 }
 
+.office-hours-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.office-hours {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--bg-primary);
+    padding: var(--spacing-md);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.office-hours--secondary {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;    
+    background-color: var(--bg-secondary);
+    padding: var(--spacing-md);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 .hours-block {
-    margin-bottom: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
 }
 
 .hours-block h4 {
