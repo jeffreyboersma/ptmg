@@ -42,6 +42,9 @@
 }
 
 @media (max-width: 768px) {
+    .contact-form-container {
+        padding: var(--spacing-md);
+    }
     .form-row {
         grid-template-columns: 1fr;
         gap: 0;
