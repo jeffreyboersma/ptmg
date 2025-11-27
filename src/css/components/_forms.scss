@@ -2,6 +2,7 @@
 .contact-form-container {
     background-color: var(--bg-secondary);
     padding: var(--spacing-lg);
+    margin: 0 var(--spacing-lg);
     border-radius: 8px;
 }
 
@@ -31,4 +32,17 @@
 .form-group textarea:focus {
     outline: none;
     border-color: var(--accent-color);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-md);
+}
+
+@media (max-width: 768px) {
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
 }
