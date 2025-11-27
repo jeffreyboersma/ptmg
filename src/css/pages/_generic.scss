@@ -35,11 +35,8 @@
     }
 
     @media (max-width: 768px) {
-        [data-theme="dark"] .hero-image img {
-            opacity: 0.5;
-        }
-        [data-theme="light"] .hero-image img {
-            opacity: 0.95;
+        .hero-image img {
+            opacity: 0.65;
         }
     }
 
