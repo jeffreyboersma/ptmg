@@ -7,7 +7,7 @@ async function loadTeamMemberDetail() {
 
         if (!memberName) {
             // No name provided, redirect to team page
-            window.location.href = 'team.html';
+            window.location.href = '/team/';
             return;
         }
 
@@ -19,7 +19,7 @@ async function loadTeamMemberDetail() {
 
         if (!personArray || !personArray[0]) {
             // Person not found, redirect to team page
-            window.location.href = 'team.html';
+            window.location.href = '/team/';
             return;
         }
 
@@ -63,7 +63,7 @@ async function loadTeamMemberDetail() {
     } catch (error) {
         console.error('Error loading team member:', error);
         // Redirect to team page on error
-        window.location.href = 'team.html';
+        window.location.href = '/team/';
     }
 }
 

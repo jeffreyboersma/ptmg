@@ -20,7 +20,7 @@ async function loadTeamMembers() {
 
             // Create the team member card as a clickable link
             const card = document.createElement('a');
-            card.href = `team-member.html?name=${encodeURIComponent(person.name)}`;
+            card.href = `/team-member/?name=${encodeURIComponent(person.name)}`;
             card.className = 'team-member-card-link';
 
             card.innerHTML = `

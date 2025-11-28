@@ -2,7 +2,7 @@
     "Ken Boersma": [
         {
             "name": "Ken Boersma",
-            "image": "images/people/ken_boersma.jpg",
+            "image": "/images/people/ken_boersma.jpg",
             "title": "CPA, CA",
             "position": "Partner",
             "phone": "519-235-0101 ext. 277",
@@ -13,7 +13,7 @@
     "Ron Godkin": [
         {
             "name": "Ron Godkin",
-            "image": "images/people/ron_godkin.jpg",
+            "image": "/images/people/ron_godkin.jpg",
             "title": "CPA, CA",
             "position": "Partner",
             "phone": "519-235-0101 ext. 220",
@@ -24,7 +24,7 @@
     "Dave Vantyghem": [
         {
             "name": "Dave Vantyghem",
-            "image": "images/people/dave_vantyghem.jpg",
+            "image": "/images/people/dave_vantyghem.jpg",
             "title": "CPA, CA",
             "position": "Partner",
             "phone": "519-235-0101 ext. 275",
@@ -35,7 +35,7 @@
     "Jilleana Poortinga": [
         {
             "name": "Jilleana Poortinga",
-            "image": "images/people/jilleana_poortinga.jpg",
+            "image": "/images/people/jilleana_poortinga.jpg",
             "title": "CPA, CA",
             "position": "Partner",
             "phone": "519-235-0101 ext. 293",
@@ -46,7 +46,7 @@
     "Jeff Masse": [
         {
             "name": "Jeff Masse",
-            "image": "images/people/jeff_masse.jpg",
+            "image": "/images/people/jeff_masse.jpg",
             "title": "CPA, CA",
             "position": "Partner",
             "phone": "519-235-0101 ext. 243",
@@ -57,7 +57,7 @@
     "Tyler Bryson": [
         {
             "name": "Tyler Bryson",
-            "image": "images/people/tyler_bryson.jpg",
+            "image": "/images/people/tyler_bryson.jpg",
             "title": "CPA",
             "position": "Partner",
             "phone": "519-235-0101 ext. 296",
@@ -68,7 +68,7 @@
     "Josh Groot": [
         {
             "name": "Josh Groot",
-            "image": "images/people/josh_groot.jpg",
+            "image": "/images/people/josh_groot.jpg",
             "title": "CPA",
             "position": "Partner",
             "phone": "519-235-0101 ext. 292",
